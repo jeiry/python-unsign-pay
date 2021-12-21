@@ -25,17 +25,6 @@ def findLocation():
         print('error', e)
         return None
 
-
-def WLog(id):
-    print('写log')
-    try:
-        f = open("last.log", 'w')
-        f.write(id)
-        f.close()
-    except Exception as e:
-        print(e)
-
-
 def callback(fee,out_trade_no):
     payload = {
         'fee': fee,
